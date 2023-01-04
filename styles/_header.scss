@@ -1,0 +1,95 @@
+
+body {
+    background-color: $bcb;
+}
+
+.header, footer {
+    background-color: $bc;
+}
+
+.container {
+    max-width: $site-width;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header-link {
+    @include txt (16px, 600, 22px);
+    padding: 40px;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    @extend .button;
+}
+
+.main {
+    margin-top: 160px;
+    margin-bottom: 200px;
+}
+
+.flex-box, .flex-box-logo, .flex-box-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next {
+    @include txt(18px, 600, 160%);
+    text-transform: uppercase;
+    color: $bcbutton;
+}
+
+.main-headding {
+    @include txt(55px, 800, 130%);
+    width: 604px;
+    margin-top: 10px;
+}
+
+.main-dsc {
+    @include txt(18px, 600, 160%);
+    width: 558px;
+    opacity: 0.7;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.button-flex {
+    display: flex;
+}
+
+.get {
+    @extend .button;
+    margin-right: 20px;
+}
+
+.button-txt {
+    @include txt(20px, 600, 27px);
+    padding: 15px 30px;
+}
+
+.watch, .learn-watch {
+    @extend .button;
+}
+
+.button-txt-flex {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.watch-txt {
+    @include txt(20px,600,27px);
+    margin-left: 10px;
+}
+
+.get:hover, .watch:hover, .learn:hover {
+    outline: 4px solid #fff;
+}
+
+.logo {
+    padding-bottom: 100px;
+}
